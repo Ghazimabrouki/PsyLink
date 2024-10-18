@@ -305,8 +305,14 @@
                                     <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Tous les messages supplémentaires."></textarea>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-                                    <button type="submit" value="" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Soumettre</button>
+                                    <button type="button" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block" onclick="refreshPage()">Soumettre</button>
                                 </div>
+                                
+                                <script>
+                                    function refreshPage() {
+                                        location.reload(); // Recharge la page
+                                    }
+                                </script>
                             </fieldset>
                         </form>
                     </div>
